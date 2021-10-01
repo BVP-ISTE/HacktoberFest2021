@@ -6,7 +6,7 @@ int main()
 
 int b[20],d,r,i=0,n,o,h;
 char hex[20];
-cout<<"Enter Decimal number : "";
+cout<<"Enter Decimal number : ";
 cin>>d;
 
 n=d;
