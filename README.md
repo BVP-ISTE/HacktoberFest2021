@@ -21,8 +21,6 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 </ul>
 <hr>
 
-[![Hacktoberfest 2021](https://img.shields.io/github/hacktoberfest/2020/BVP-ISTE/HacktoberFest2021?label=Hacktoberfest)](https://github.com/BVP-ISTE/HacktoberFest2021/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest)
-
 <div>
 <h3 align="center">🥇 🔥 Leader Board 🔥 🥇</h3>
 
