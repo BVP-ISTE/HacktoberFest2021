@@ -21,15 +21,13 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 </ul>
 <hr>
 
-[![Hacktoberfest 2021](https://img.shields.io/github/hacktoberfest/2020/BVP-ISTE/HacktoberFest2021?label=Hacktoberfest)](https://github.com/BVP-ISTE/HacktoberFest2021/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest)
-
 <div>
 <h3 align="center">🥇 🔥 Leader Board 🔥 🥇</h3>
 
 <h4 align='center'>Top 10 Contributors </h4>
 
 <a align='center' href="https://github.com/BVP-ISTE/Hacktoberfest2020/graphs/contributors">
-  <img align='center' src="https://contrib.rocks/image?repo=BVP-ISTE/Hacktoberfest2020&max=10" />
+  <img align='center' src="https://contrib.rocks/image?repo=BVP-ISTE/HacktoberFest2021&max=10" />
 </a>
 
 <br>
@@ -39,7 +37,8 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 <p align="center">
     <a href="https://github.com/BVP-ISTE/HacktoberFest2021/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/BVP-ISTE/HacktoberFest2021" /></a>
-    <a href="https://github.com/BVP-ISTE/HacktoberFest2021/pulse" alt="Activity">
+   
+ <a href="https://github.com/BVP-ISTE/HacktoberFest2021/pulse" alt="Activity">
         <img src="https://img.shields.io/github/commit-activity/m/BVP-ISTE/HacktoberFest2021" /></a>
 <a href="https://github.com/BVP-ISTE/HacktoberFest2021/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
 
