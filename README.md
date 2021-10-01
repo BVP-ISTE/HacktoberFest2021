@@ -29,7 +29,7 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 <h4 align='center'>Top Contributors </h4>
 
 <a href="https://github.com/BVP-ISTE/Hacktoberfest2020/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=BVP-ISTE/Hacktoberfest2020" />
+  <img src="https://contrib.rocks/image?repo=BVP-ISTE/Hacktoberfest2020&max=10" />
 </a>
 
 Made with [contributors-img](https://contrib.rocks).
@@ -37,7 +37,8 @@ Made with [contributors-img](https://contrib.rocks).
 <p align="center">
     <a href="https://github.com/BVP-ISTE/HacktoberFest2021/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/BVP-ISTE/HacktoberFest2021" /></a>
-    <a href="https://github.com/BVP-ISTE/HacktoberFest2021/pulse" alt="Activity">
+   
+ <a href="https://github.com/BVP-ISTE/HacktoberFest2021/pulse" alt="Activity">
         <img src="https://img.shields.io/github/commit-activity/m/BVP-ISTE/HacktoberFest2021" /></a>
 <a href="https://github.com/BVP-ISTE/HacktoberFest2021/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
 
