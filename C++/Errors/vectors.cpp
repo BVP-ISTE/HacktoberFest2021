@@ -15,5 +15,5 @@ int main(){
     v.push_back(20);
     v.push_back(30);
     v[1]=100;
-    v.pop();
+    v.pop_back();
 }
