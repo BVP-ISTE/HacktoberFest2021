@@ -16,7 +16,7 @@ int binarySearch(int *input, int n, int val)
             return mid;
         }
         else if(val<input[mid]){
-            
+           end = mid-1;
 
         }
         else{
@@ -25,6 +25,7 @@ int binarySearch(int *input, int n, int val)
 
     }
     return -1;
+
 
 }
 
