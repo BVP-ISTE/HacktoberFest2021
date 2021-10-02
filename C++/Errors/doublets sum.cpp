@@ -15,7 +15,8 @@ int pairSum(int *input, int size, int x)
             }
         }
     }
-    
+    return count;
+
 }
 int main()
 {
