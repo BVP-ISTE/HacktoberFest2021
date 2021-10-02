@@ -21,5 +21,5 @@ int main()
    cout<<"Enter an Element to be Searched:";
    cin>>k;
    int index=Search(A,7,k);
-   cout<<"Element found at index is :"<<index<<endl;
+   cout<<"Element found at index :"<<index<<endl;
 }
