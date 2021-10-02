@@ -2,10 +2,8 @@ a = []
 
 n = input("Enter space separated values to be entered in the list:").split(" ")
 
-##-loop 1: start
-for i in range(len(n)):
-    a.append(int(n[i])
-##-loop 1:end
+# Using map
+a = list(map(int, n))
 
 print(a)
              
