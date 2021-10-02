@@ -12,7 +12,10 @@ int sum(int input[], int n) {
      Return output and don't print it.
      Taking input and printing output is handled automatically.
   */
-
+   if(n<=0)
+   return 0;
+   else
+   return(sum(input,n-1)+input[n-1]);
 
 }
 
