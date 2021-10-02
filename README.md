@@ -27,7 +27,7 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 <h4 align='center'>Top 10 Contributors </h4>
 
 <a align='center' href="https://github.com/BVP-ISTE/Hacktoberfest2020/graphs/contributors">
-  <img align='center' src="https://contrib.rocks/image?repo=BVP-ISTE/HacktoberFest2021&max=10" />
+  <img align='center' src="https://contrib.rocks/image?repo=BVP-ISTE/HacktoberFest2021" />
 </a>
 
 <br>
