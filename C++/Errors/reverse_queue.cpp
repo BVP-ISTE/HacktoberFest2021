@@ -18,7 +18,7 @@ void reverseQueue(queue<int>&input){
         stack.push(a);
     }
     //error in the following loop
-    while(!input.empty()){
+    while(!stack.empty()){
         int b=stack.top();
         stack.pop();
         input.push(b);
@@ -37,4 +37,3 @@ int main(){
     reverseQueue(input);
     cout<<input.front()<<endl;
 }
-
