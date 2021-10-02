@@ -9,7 +9,7 @@ class Node{
 public:
     int data;
     Node*next;
-    
+
     Node(int data){
         this->data=data;
         next=NULL;
@@ -51,7 +51,7 @@ void print(Node*head){
 void printIthNode(Node*head,int i){
     //find and correct the error in the function
     Node*temp=head;
-    int count=1;
+    int count=0;
     while(temp!=NULL){
         if(count==i){
             cout<<temp->data<<endl;
@@ -64,11 +64,9 @@ void printIthNode(Node*head,int i){
 int main(){
     Node*head=takeInput();
     print(head);
-    cout<<"Enter position"<<endl;
+    cout<<"\n Enter position"<<endl;
     int i;
     cin>>i;
     printIthNode(head,i);
- 
+
 }
-
-
