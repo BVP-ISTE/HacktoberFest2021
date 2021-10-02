@@ -10,9 +10,15 @@ bool checkNumber(int input[], int size, int x) {
      Return output and don't print it.
      Taking input and printing output is handled automatically.
   */
-
-
-
+ if(size==0)
+        return false;
+    else{
+    if(input[size]==x)
+        return true;
+    else{
+        checkNumber(input,size-1,x);
+    }
+    }
 }
 
 int main(){
