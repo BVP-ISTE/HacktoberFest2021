@@ -8,9 +8,9 @@ int n,r,sum=0;
  cin>>n;
  //error in the below segment
 //-------------
-while(n!==0)
+while(n>0)
  {
- r=n/10;
+ r=n%10;
  n=n/10;
  sum=sum+r;
  }
