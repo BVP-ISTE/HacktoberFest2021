@@ -1,12 +1,7 @@
-def palindrome(n):
-  m=n 
-  a=0
-  while(m!=0):
-    
-    
-  if (n == a):
-    return "it is a palindrome number"
-  else:
-    return "it is not palindrome number"
-    
-print palindrome(156)
+number = int(input("Enter the number"))
+string = str(number)
+rev_string = string[::1]
+print("reversed string:",rev_string)
+if string == rev_string:
+  print("Entered number is palindrome")
+else: print("Entered number is not palindrome")
