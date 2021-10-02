@@ -29,12 +29,12 @@ int main() {
   int array[] = {94, 42, 50, 95, 333, 65, 54, 456, 1, 1234};
   int n = sizeof(array)/sizeof(array[0]);
 
-  std::cout << "Before Bubble Sort :" << std::endl;
+  std::cout << "Before Bubble Sort the array is :" << std::endl;
   PrintArray(array, n);
 
   BubbleSort(array, n);
 
-  std::cout << "After Bubble Sort :" << std::endl;
+  std::cout << "After Bubble Sort the array is :" << std::endl;
   PrintArray(array, n);
   return (0);
 }
