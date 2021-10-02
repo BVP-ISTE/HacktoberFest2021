@@ -64,7 +64,7 @@ void printIthNode(Node*head,int i){
 int main(){
     Node*head=takeInput();
     print(head);
-    cout<<"\n Enter Position"<<endl;
+    cout<<"\n Enter position"<<endl;
     int i;
     cin>>i;
     printIthNode(head,i);
