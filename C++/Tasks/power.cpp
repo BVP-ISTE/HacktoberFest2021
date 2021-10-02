@@ -11,7 +11,15 @@ int power(int x, int n) {
      Return output and don't print it.
      Taking input and printing output is handled automatically.
   */
-
+    if (n == 0)
+        return 1;
+  
+    // If we need to find of 0^y
+    if (x == 0)
+        return 0;
+  
+    // For all other cases
+    return x * power(x, n - 1);
 
 
 }
