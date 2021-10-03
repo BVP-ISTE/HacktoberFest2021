@@ -42,7 +42,9 @@ int main(){
     input.push(40);
     input.push(50);
     input.push(60);
+    cout<<"Before Reverse: "<<endl;
     cout<<input.top()<<endl;
     reverseStack(input,extra);
+    cout<<"After Reverse: "<<endl;
     cout<<input.top()<<endl;
 }
