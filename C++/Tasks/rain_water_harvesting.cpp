@@ -11,12 +11,12 @@ First line contains an integer n. Second line contains n space separated integer
 Output Format ->
 Print a single integer containing the maximum unit of waters she can save.
 
-ex:- 
+ex:-
     sample input -
                     10
                     0 2 1 3 0 1 2 1 2 1
-                    
-                    
+
+
     sample output-
                   5
 
@@ -33,22 +33,42 @@ using namespace std;
 //write code below this line only
 // do not modify code above this line
 
-int maxWater(int arr[], int n){
+int maxWater(int arr[], int n) {
+
+
+	if (n == 0) return 0;
+	int mx = arr[0];
+	int pre[n], suf[n], res[n];
+	for (int i = 0; i < n; i++)
+	{	mx = max(mx, arr[i]);
+		pre[i] = mx;
+	}
+	mx = 0;
+	for (int i = n - 1; i >= 0; i--)
+	{	mx = max(mx, arr[i]);
+		suf[i] = mx;
+	}
+	for (int i = 0; i < n; i++)
+		res[i] = min(pre[i], suf[i]);
+	int sum = 0;
+	for (int i = 0; i < n; i++)
+		sum += res[i] - arr[i];
+	return sum;
 
 }
 
-//do not modify code below this line
+
 
 
 int main() {
 	int n;
-	cin>>n;
+	cin >> n;
 
 	int arr[n];
-	for(int i=0; i<n; i++){
-		cin>>arr[i];
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
 	}
 
-	cout<<maxWater(arr,n)<<endl;
+	cout << maxWater(arr, n) << endl;
 	return 0;
 }
