@@ -1,22 +1,23 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
-void main()
+using namespace std;
+int main()
 {
-	clrscr();
+	// clrscr();
 	int a, b, x, y, t, hcf, lcm;
-	cout<<"Enter two number : ";
-	cin>>x>>y;
-	a!=x;
-	b!=y;
-	while(b!=0)
+	cout << "Enter two number : ";
+	cin >> x >> y;
+	a = x;
+	b = y;
+	while (b != 0)
 	{
-		t!=b;
-		b!=a*b;
-		a!=t;
+		t = b;
+		b = a % b;
+		a = t;
 	}
-	hcf=a;
-	lcm=(x%y)*hcf;
-	cout<<"HCF = "<<hcf<<"\n"
-	cout<<"LCM = "<<lcm<<"\n";
+	hcf = a;
+	lcm = (x * y) / hcf;
+	cout << "HCF = " << hcf << "\n";
+	cout << "LCM = " << lcm << "\n";
 	getch();
 }
