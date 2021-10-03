@@ -17,16 +17,16 @@
         width: 7em;
         height: 7em;
         background-color: white;
-        border-radius 50%;
+        border-radius: 50%;
         position: absolute; 
         top: 300px;
         left: 900px;
         box-shadow: 14px 10px 0px 0px white;
         background: transparent;
     }
-    body hover 
+    body:hover {
         background: black;
-    
+    }
     #star_1 {
         animation-name: elem2;
         animation-duration: 1s;
@@ -40,13 +40,13 @@
         top: 320px;
         left: 400px;
     }
-    star_2 {
+    #star_2 {
         animation-name: elem3;
         animation-duration: 1s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        width2em;
-        height 2em;
+        width: 2em;
+        height: 2em;
         background-color: white;
         border-radius: 50%;
         position: absolute;
@@ -55,20 +55,20 @@
     }
     @keyframes elem2 {
         20% {
-          transform: scale0.6 
+          transform: scale(0.6); 
           background-color: gray; 
         }
         80% {
-            background-color: gray;
+          background-color: gray;
         }
     }
     @keyframes elem3 {
         20% {
-            background-color: gray;
-            transform: scale(0.6);
+          background-color: gray;
+          transform: scale(0.6);
         }
         80% {
-            background-color: gray;
+          background-color: gray;
         }
     }
     </style>
@@ -76,6 +76,6 @@
 <body>
     <div id="moon"><div>
     <div id="star_1"></div>
-    <div id="star_2">/div
+    <div id="star_2"></div>
 </body>
 </html>
