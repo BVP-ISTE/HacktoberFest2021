@@ -26,7 +26,7 @@ void reverseStack(stack<int>&input,stack<int>&extra){
     }
     input.push(lastElement);
     //error in the following loop
-    while(!input.empty()){
+    while(!extra.empty()){
         int b=extra.top();
         extra.pop();
         input.push(b);
@@ -42,7 +42,9 @@ int main(){
     input.push(40);
     input.push(50);
     input.push(60);
+    cout<<"Before Reverse: "<<endl;
     cout<<input.top()<<endl;
     reverseStack(input,extra);
+    cout<<"After Reverse: "<<endl;
     cout<<input.top()<<endl;
 }

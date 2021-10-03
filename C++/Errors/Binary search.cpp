@@ -1,5 +1,3 @@
-//Binary Search
-
 #include <iostream>
 using namespace std;
 
@@ -16,8 +14,7 @@ int binarySearch(int *input, int n, int val)
             return mid;
         }
         else if(val<input[mid]){
-            
-
+            end = mid - 1;
         }
         else{
             start=mid+1;
@@ -39,17 +36,16 @@ int main()
 	{
 		cin >> input[i];
 	}
-
-	int t;
-	cin >> t;
-
-	while (t--)
-	{
 		int val;
-		cin >> val;
-		cout << binarySearch(input, size, val) << endl;
-	}
+    cout<<"Enter the value to be searched: ";
+	cin >> val;
+	int index =	binarySearch(input, size, val);
+    if(index == -1){
+      cout<< val <<" is not present in the array";
+   }
+   else{
+      cout<< val <<" is present at index "<< index <<" in the array";
+   }
 
-	delete [] input;
 	return 0;
-}
+}//Binary Search
