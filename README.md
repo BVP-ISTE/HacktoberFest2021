@@ -17,7 +17,8 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 <li>Go to the issues page and find the one suits you.Make sure issues which you choose have the label
 <strong>Hactoberfest2021</strong> in them.</li>
 <li>Each Language folder contains the readme which will guide you how to do the tasks in it.</li>
-<li>Find the bug 🐞,correct it ✅ and make a PR ,let's see who rules the leaderboard 🥇.</li>
+<li>PLEASE MAKE A SEPERATE PR FOR EACH ISSUE .SOLVING MORE THAN ONE ISSUE IN A SINGLE PR WILL RESULT IN REJECTION .</li>
+ <li>Find the bug 🐞,correct it ✅ and make a PR ,let's see who rules the leaderboard 🥇.</li>
 </ul>
 <hr>
 
