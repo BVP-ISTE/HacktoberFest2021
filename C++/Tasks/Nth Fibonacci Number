@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int Fibonacci(int n){
+    int t0 = 0,t1 = 1,t2;
+    if (n == 1){
+        return t0;
+    }
+    else if (n == 2){
+        return  t1;
+    }
+    else{
+        for(int i = 2; i < n; i++){
+            t2 = t1 + t0;
+            t0 = t1;
+            t1 = t2;
+    }
+    return t2;
+    }
+}
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    cout<<Fibonacci(n);
+    
+    return 0;
+}
