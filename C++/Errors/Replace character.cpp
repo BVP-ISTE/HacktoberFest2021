@@ -12,7 +12,7 @@ void replaceCharacter(char input[], char c1, char c2) {
     int size=count;
     for(int j=0;j<size;j++){
         if(input[j]==c1){
-            
+            input[j]=c2;
         }
     }
 }
@@ -24,4 +24,3 @@ int main() {
     replaceCharacter(input, c1, c2);
     cout << input << endl;
 }
-
