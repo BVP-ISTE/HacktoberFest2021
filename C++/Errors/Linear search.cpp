@@ -1,6 +1,4 @@
 // Program of Linear Search of an element
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,14 +6,13 @@ using namespace std;
 int linearSearch(int *arr, int n, int x)
 {
 
-        for(int k=0;k<n;k++){
-            if(arr[k]==x){
+	for (int k = 0; k < n; k++) {
+		if (arr[k] == x) {
+			return k;
+		}
 
-                
-            }
-
-        }
-        return -1;
+	}
+	return -1;
 }
 
 int main()
@@ -37,5 +34,3 @@ int main()
 	}
 	return 0;
 }
-
-
