@@ -18,7 +18,7 @@ int main()
 {
    int A[]={2,4,5,7,10,9,13};
    int k;
-   cout<<"Enter an Element to be Searched:";
+   cout<<"Enter an Element to be Searched :";
    cin>>k;
    int index=Search(A,7,k);
 
