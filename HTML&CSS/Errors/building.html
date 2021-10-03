@@ -4,13 +4,9 @@
     <meta charset="UTF-8"/>
     <style>
         html, body {
-            margin: 0
-            padding: 0
-            border: 0
-        }
-
-        * {
-            box-sizing: 
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
 
         .scene {
@@ -35,13 +31,13 @@
             background-size: 30px 30px, 30px 30px;
             background-position: 15px,15px;
             height: 105px;
-            width 105px
+            width: 105px;
             min-width: 75px;
             min-height: 75px;
             max-width: 915px;
             max-height: 615px;
             position: absolute;
-            bottom 30px
+            bottom: 30px;
             left: 15%;
             z-index: 5;
         }
@@ -89,8 +85,8 @@
             width: 0px;
             border: 35px solid #4b4b4b;
             border-radius: 50%;
-            opacity 0;
-            transform: scale(0.2)
+            opacity: 0;
+            transform: scale(0.2);
             z-index: -1;
         }
 
@@ -134,11 +130,11 @@
             animation: smokeR 10s 9s infinite
         }
 
-        .scene__building__stairs 
+        .scene__building__stairs {
             position: absolute;
             left: 0;
             bottom: 0;
-        
+        }
 
         .scene__building__stairs:before {
             content: "";
@@ -177,9 +173,10 @@
                 opacity: 1;
                 transform: scale(0.2) translate(0, -5px);
             }
-            100% 
-                opacity: 0
+            100% {
+                opacity: 0;
                 transform: scale(1) translate(-20px, -130px);
+            }
             
         }
 
@@ -197,7 +194,7 @@
             }
         }
 
-        @-webkit-keyframes pulsate {
+        @keyframes pulsate {
             0% {
                 -webkit-transform: scale(0.1, 0.1);
                 opacity: 0.0;
@@ -210,7 +207,7 @@
                 opacity: 0.0;
             }
         }
-
+    </style>
     
 
 </head>
@@ -250,7 +247,7 @@
         const grid = 30;
         let startX, startY, startWidth, startHeight;
 
-        function calculatePrice() 
+        function calculatePrice() {
             const width = building.offsetWidth;
             const height = building.offsetHeight;
             const buildingArea = width * height;
@@ -281,14 +278,14 @@
             calculatePrice();
         }
 
-        function stopDrag()
+        function stopDrag() {
             document.documentElement.removeEventListener('mousemove', doDrag, false);
             document.documentElement.removeEventListener('mouseup', stopDrag, false);
-        
+        }
 
         draggable.addEventListener(mousedown, initDrag, false);
-        calculatePrice()
-    })();
+        calculatePrice();
+    } );
 </script>
 </body>
 </html>
