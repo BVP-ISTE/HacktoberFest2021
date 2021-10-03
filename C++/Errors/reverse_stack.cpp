@@ -26,7 +26,7 @@ void reverseStack(stack<int>&input,stack<int>&extra){
     }
     input.push(lastElement);
     //error in the following loop
-    while(!input.empty()){
+    while(!extra.empty()){
         int b=extra.top();
         extra.pop();
         input.push(b);
