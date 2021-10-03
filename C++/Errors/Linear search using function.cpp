@@ -5,13 +5,13 @@ using namespace std;
 //-------------
 int Search(int A[],int n,int key)
 {
-   for(int i=0;i<=n;i++)
+   for(int i=0;i<n;i++)
    {
      if(key==A[i])
      return i;
      //return 0;
    }
-
+  return -1;
 }
 //-------------
 int main()
