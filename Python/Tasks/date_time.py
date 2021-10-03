@@ -11,6 +11,7 @@ g) Day of the month
 h) Day of week
 """
 
+
 import time
 import datetime
 print("Current date and time: " , datetime.datetime.now())
