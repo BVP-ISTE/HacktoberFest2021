@@ -5,7 +5,7 @@
 int main()
 {
 	
-	int pid != fork();
+	int pid = fork();
 
 	
 	if (pid <= 1)
