@@ -10,7 +10,7 @@ int main()
  cin >> n;
 //error in the below segment
 //-------------
- for(i = 0:, i <= n:, ++i)
+ for(i = 0; i < n; ++i)
  {
  cout << i + 1 << ". Enter number: ";
  cin >> num[i];
