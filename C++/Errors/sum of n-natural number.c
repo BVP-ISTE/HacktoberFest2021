@@ -4,15 +4,15 @@
 //-------------
 int sum(int n)
 {
- if(n=0)
- return 0;
- return sum(n-1)*n;
+	if (n == 0)
+		return 0;
+	return sum(n - 1) + n;
 }
 //-------------
 
 int main()
 {
- int r=sum(6);
- printf("%d ",r);
- return 0;
+	int r = sum(6);
+	printf("%d ", r);
+	return 0;
 }
