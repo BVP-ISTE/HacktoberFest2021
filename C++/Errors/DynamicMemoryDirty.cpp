@@ -3,16 +3,15 @@
 
 int main()
 {
-		int iVar;
+		int*iVar;
 		
-		iVar=(int)malloc((sizeof(int));
+		iVar=(int*)malloc((sizeof(int))) ;
 		
-		printf("Now, input an integer value: "):
+		printf("Now, input an integer value: ");
 		scanf("%d",iVar);
 		
-		printf("Great!!! you entered: %d.\n",iVar);
+		printf("Great!!! you entered: %d \n",*iVar);
 		
 		free(iVar);
-		return 1:
+		return 0;
 }
-
