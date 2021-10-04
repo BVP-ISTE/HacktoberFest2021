@@ -15,7 +15,7 @@ public:
     
     Node(int data){
         this->data=data;
-        next=INT_MAX;
+        next=NULL;
     }
 };
 
