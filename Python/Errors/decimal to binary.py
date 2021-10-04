@@ -1,11 +1,11 @@
 #decimal to binary
 #find the error in the code
 num=int(input())
-i=0
-ans=0
-while num!=0:
-    rem=num%2
-    ans=ans+(rem*(10**i))
-    num=num/2
-    i=i+1
-print(ans)
+bnum = 0
+mul = 1
+while num>0:
+    rem = num%2
+    bnum = bnum+(rem*mul)
+    mul = mul*10
+    num = int(num/2)
+print(bnum)
