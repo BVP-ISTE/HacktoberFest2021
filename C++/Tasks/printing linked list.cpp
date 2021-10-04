@@ -16,7 +16,7 @@ public:
         next=NULL;
     }
 };
-//function for printing linked list
+
 void print(Node*head){
     Node*temp=head;
     while(temp!=NULL){
