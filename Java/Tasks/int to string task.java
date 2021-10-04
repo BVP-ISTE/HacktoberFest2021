@@ -7,10 +7,11 @@ class Main {
 
     /* convert int to string using the inbuilt method */
    // write your code here
-   
+   char x=(char)num1;
+   char y=(char)num2;
    
     // print string variables
-    System.out.println();    // 36
-    System.out.println();    // 99
+    System.out.println(x);    // 36
+    System.out.println(y);    // 99
   }
 }
