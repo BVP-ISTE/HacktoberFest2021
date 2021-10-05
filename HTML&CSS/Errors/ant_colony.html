@@ -12,7 +12,7 @@
             text-align: center;
             margin: 0;
 
-
+		}
         h3 {
             text-align: center;
             margin: 0
@@ -32,7 +32,7 @@
             border-color: black;
             border-style: solid;
             border-width: 1px;
-            transform: translate(-50%, -50%;
+            transform: translate(-50%, -50%);
             display: flex;
             text-align: center;
             justify-content: center;
@@ -253,7 +253,7 @@
 			if (Object.keys(objects[lastCoord]).length < 1) {
 				delete objects[lastCoord];
 			}
-			switch () {
+			switch (direction) {
 				case ("left"):
 					this.x = this.x - 1;
 					if (this.x < minX) {
@@ -347,7 +347,7 @@
 		}
 	}
 
-	class Queen extends  {
+	class Queen extends  Ant{
 		letter     = "Q";
 		delay      = 3;
 		hungerMax  = 500;
