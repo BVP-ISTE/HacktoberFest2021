@@ -20,7 +20,8 @@ def maxPathSum(ar1,ar2 , m , n):
         i+=1
     while j < n: 
         #complete the while loop
-
+        sum2 += ar2[j]
+        j+=1
         
     result += max(sum1,sum2) 
     return result 
