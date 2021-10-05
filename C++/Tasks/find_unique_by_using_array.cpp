@@ -5,11 +5,23 @@ using namespace std;
 //Now, in the given array/list, 'M' numbers are present twice and one number is present only once.
 //You need to find and return that number which is unique in the array/list.
 
-int findUnique(int *arr, int size){
+int findUnique(int *arr, int size) {
 
+  for (int i = 0; i < size; i++)
+  {
+    bool flag = false;
+    for (int j = i + 1; j < size; j++)
+    {
+      if (arr[i] == arr[j])
+      {
+        flag = true;
+        break;
+      }
+    }
+    if (flag == false) return arr[i];
+  }
 
-
-
+  return 0;
 
 }
 
@@ -18,16 +30,16 @@ int findUnique(int *arr, int size){
 
 int main()
 {
-	int t;
-	cin >> t;
-	while (t--){
-		int size;
-		cin >> size;
-		int *input = new int[size];
-		for (int i = 0; i < size; ++i){
-			cin >> input[i];
-		}
-		cout << findUnique(input, size) << endl;
-	}
-	return 0;
+  int t;
+  cin >> t;
+  while (t--) {
+    int size;
+    cin >> size;
+    int *input = new int[size];
+    for (int i = 0; i < size; ++i) {
+      cin >> input[i];
+    }
+    cout << findUnique(input, size) << endl;
+  }
+  return 0;
 }
