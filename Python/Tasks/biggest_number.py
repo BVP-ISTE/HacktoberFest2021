@@ -1,10 +1,10 @@
-def bigger(a,b)
-  if a>b
+def bigger(a,b):
+  if a>b:
     return a
-  else
+  else:
     return b
 
-def biggest(a,b,c)
+def biggest(a,b,c):
    return bigger(a,bigger(b,c))
    
-print biggest(3,7,1);
+print(biggest(3,7,1))
