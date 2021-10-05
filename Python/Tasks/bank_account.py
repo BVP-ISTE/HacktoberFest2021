@@ -10,7 +10,7 @@ Suppose the following input is supplied to the program:
 D 300
 D 300
 W 200
-D 100
+D 10
 Then, the output should be:
 500
 """
