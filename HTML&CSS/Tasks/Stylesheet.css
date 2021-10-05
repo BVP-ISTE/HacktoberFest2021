@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin:0;
+background-color: #fff3e6;
+font:"Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #ff9900;
+  font:"Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
+  position :fixed;
+  top: 0;
+  opacity:0.9;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.left {
+    float:left;
+    color:white;
+    font-size:30px;
+    position:fixed;
+    margin-bottom:10px;
+}
+
+.right {
+    float:right;
+    margin-right:-25px;
+}
+
+.right a {
+    margin:20px;
+    font-size:20px;
+    float:left;
+    color:white;
+    padding:25px;
+    display:block;
+    transition: all 0.5s;
+}
+
+.right a:hover {
+  background-color:#ffc299;
+}
+
+.intro {
+padding: 130px 0 180px 0;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/540d844de4b068678cd449fa/1553731231026-4GBZGRSV733O8OIHEVSN/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcW7uEhC96WQdj-SwE5EpM0lAopPba9ZX3O0oeNTVSRxdHAmtcci_6bmVLoSDQq_pb/solid-dark-gray-background-9.jpg?format=2500w);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.mdp h1 {
+color:white;
+font-size:100px;
+margin-left:60px;
+padding-top:125px;
+}
+
+.ab h1 {
+  padding-top: 25px;
+  padding-left: 15%;
+  padding-right: 15%;
+  color:#ff9900;
+  font-size:50px;
+  text-align:center;
+}
+
+.im {
+  padding: 50px;
+  padding-top:25px;
+  color: white;
+  text-align: center;
+}
+
+.ab p {
+    padding:150px;
+    color:black;
+    font-size:25px;
+    text-align:right;
+}
+
+.ed {
+    padding: 150px 0 180px 0;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/540d844de4b068678cd449fa/1553731231026-4GBZGRSV733O8OIHEVSN/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcW7uEhC96WQdj-SwE5EpM0lAopPba9ZX3O0oeNTVSRxdHAmtcci_6bmVLoSDQq_pb/solid-dark-gray-background-9.jpg?format=2500w);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.ed h1{
+    color:#ff9900;
+    padding:100px;
+    font-size:50px;
+}
+
+.school h3{
+    font-size:25px;
+}
+
+.school h5{
+  padding-bottom:25px;
+}  
+
+.college h3{
+    font-size:25px;
+}
+
+.college h5{
+  padding-bottom:25px;
+}  
+
+.hobbies {
+padding-bottom: 500px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.hobbies h1 {
+  padding-top: 20px;
+  padding-bottom:50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  color:#ff9900;
+  font-size:50px;
+  text-align:center;
+}
+
+.hob {
+  float: left;
+  width: 25%;
+}
+
+.hobicon {
+    padding: 50px;
+  padding-top:25px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom:100px;
+}
+
+.hobicon img{
+  border-radius: 25%;
+}
+
+.hobicon p{
+    color:black;
+}
+
+.call {
+    padding: 150px 0 180px 0;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/540d844de4b068678cd449fa/1553731231026-4GBZGRSV733O8OIHEVSN/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcW7uEhC96WQdj-SwE5EpM0lAopPba9ZX3O0oeNTVSRxdHAmtcci_6bmVLoSDQq_pb/solid-dark-gray-background-9.jpg?format=2500w);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.call h1{
+    color:#ff9900;
+}
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.github {
+  background-color: #f34f29;
+  margin-right: 10px;
+}
+
+.instagram {
+  background-color:#8a3ab9;
+margin-right: 10px;
+}
+
+.linkedin {
+  background-color: #3f729b;
+margin-right: 10px;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
