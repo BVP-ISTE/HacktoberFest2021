@@ -12,6 +12,9 @@ int sum(int input[], int n) {
      Return output and don't print it.
      Taking input and printing output is handled automatically.
   */
+  if (n <= 0)
+        return 0;
+    return (sum(input, n - 1) + input[n - 1]);
 
 
 }
@@ -20,13 +23,13 @@ int sum(int input[], int n) {
 int main(){
     int n;
     cin >> n;
-  
+
     int *input = new int[n];
-    
+
     for(int i = 0; i < n; i++) {
         cin >> input[i];
     }
-    
+
     cout << sum(input, n) << endl;
 }
 
