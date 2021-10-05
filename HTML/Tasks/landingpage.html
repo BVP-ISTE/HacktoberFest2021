@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!--JQUERY FILE-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+     </script>
+    
+     <!-- FontAwesome -->
+     <link href="nova.png" rel="icon" type="image/x-icon">
+     <script src="https://kit.fontawesome.com/a7366cc0cf.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Landing Page for Hacktoberfest 2021</title>
+    <!--CSS FILES-->
+    <style>
+      body{
+    font-size:100%;
+    background-color:cyan;
+}
+
+@media(max-width:998px) {
+    html{
+        font-size:59%;
+       
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size:50%;
+       
+    }
+}
+/* --------Navigation menu--------*/
+
+.navbar .fixed-top{
+    top:0px;
+}
+
+.nav-back{
+    background-color:#bd78b9;
+    color:#fff;
+}
+
+
+.navbar-brand{
+    color:white;
+    font-weight:900;
+    font-family: 'Poppins',sans-serif;
+    line-height: 0.05rem;
+    font-size:1.6rem!important;
+    margin-left: 0rem;
+} 
+
+.navbar-brand:hover{
+    color:white;
+} 
+
+.navbar .navbar-nav li{
+    padding: 0 8px;
+}
+
+.navbar .navbar-nav li a{
+    color:white;
+    font-weight: 600;
+    font-size:1.2rem;
+    font-family: 'Poppins',sans-serif;
+    text-align: left;
+    float: left;
+}
+
+.navbar .navbar-nav li a:hover{
+    color:black;
+    text-decoration: 2px solid white;  
+}
+
+
+/*the toggle effect */
+
+.navbar-toggler-right{
+    color:#fff;
+}
+
+.navbar-toggler{
+    outline: none!important;
+}
+
+/* Toggle effect ends*/
+
+#miraj{
+    width:100%;
+    height:68vh;
+}
+
+#miraj .container{
+    padding-top:8rem;
+}
+
+#miraj:before{
+    content:"";
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    height:102.2vh;
+}
+
+#miraj h1{
+    margin:0 0 1rem 0;
+    font-size:3rem;
+    font-family:'Poppins', sans-serif;
+    font-weight:900;
+    line-height:3.4rem;
+    color:firebrick;
+}
+
+#miraj h2{
+    color:white;
+    margin-bottom:4rem;
+    font-size:1.4rem;
+    font-style:'Poppins', sans-serif;
+    font-weight:500;
+    letter-spacing:0.05rem;
+}
+
+
+
+.main-btn{
+    font-size:1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:0rem;
+    display:inline-block;
+    height:3rem;
+    width:18%;
+    transition:0.5s;
+    margin-top:1rem;
+    background: #bd78b9;
+    border:.2rem solid #bd78b9;
+    color:#fff;
+    border-radius: 20px;
+    text-align: center;
+    padding-top:0.6rem;
+}
+
+.main-btn:hover{
+    background-color:rgb(230 86 175);
+    border:.2rem solid rgb(230 86 175);
+    color:white;
+    text-decoration:none;
+}
+@media(max-width:998px){
+     .main-btn{
+         width:inherit;
+         text-align: center;
+         padding-left:1rem;
+         padding-right:1rem;
+     }
+ } 
+
+    </style>
+</head>
+<body>
+    <section class="navbar" id="navbar">
+        <nav class="navbar navbar-expand-lg nav-back fixed-top">
+        <!-- <div class="container" id="myDiv"> -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a href="#home" class="nav-link scroll">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://hacktoberfest.digitalocean.com" target="_blank" class="nav-link scroll">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://hacktoberfest.digitalocean.com/resources" target="_blank" class="nav-link scroll">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link scroll">Item-1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link scroll">Item-2</a>
+                    </li>
+                   
+                </ul>
+              </div>
+        
+          </nav>
+    </section>
+
+    <!--Home section-->
+    <section id="miraj" class="d-flex align-items-center">
+        <div class="container text-center position-relative">
+            <h1>Hacktoberfest 2021</h1>
+            <h2 class="text-uppercae">
+             Open source is changing the world - One contribution at a time
+             <br>
+                <a href="https://hacktoberfest.digitalocean.com" target="_blank" class="main-btn">Start Hacking</a>
+            </h2>
+            <p> Made with ❤️ by <a href="http://miraj8280.github.io/portfolio.github.io/miraj.html" target="_blank" style="color:gold;" >Miraj Asraf</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
