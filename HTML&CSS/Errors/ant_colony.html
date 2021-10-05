@@ -11,11 +11,11 @@
         h1 {
             text-align: center;
             margin: 0;
-
+        }
 
         h3 {
             text-align: center;
-            margin: 0
+            margin: 0;
         }
 
         .label {
@@ -32,7 +32,7 @@
             border-color: black;
             border-style: solid;
             border-width: 1px;
-            transform: translate(-50%, -50%;
+            transform: translate(-50%, -50%);
             display: flex;
             text-align: center;
             justify-content: center;
@@ -68,7 +68,7 @@
             align-items: center;
         }
     </style>
-
+</head>
 <body>
 <div id="window">
     <div id="root"></div>
@@ -97,7 +97,7 @@
 </div>
 <div id="banner">
     <h3>Coded by <a href="https://github.com/metroxe">Christopher Powroznik</a> for the <a
-            href="https://onehtmlpagechallenge.com">One HTML Page Challenge</h3>
+            href="https://onehtmlpagechallenge.com">One HTML Page Challenge</a></h3>
 </div>
 </body>
 <script>
@@ -227,7 +227,7 @@
 
 		die() {
 			super.die();
-			new Food(this.x, );
+			new Food(this.x, this.y);
 		}
 
 		takeTurn(action = () => {}) {
@@ -253,7 +253,7 @@
 			if (Object.keys(objects[lastCoord]).length < 1) {
 				delete objects[lastCoord];
 			}
-			switch () {
+			switch (direction) {
 				case ("left"):
 					this.x = this.x - 1;
 					if (this.x < minX) {
@@ -347,7 +347,7 @@
 		}
 	}
 
-	class Queen extends  {
+	class Queen extends Ant {
 		letter     = "Q";
 		delay      = 3;
 		hungerMax  = 500;
@@ -472,7 +472,7 @@
 		tilesEle.innerText          = tilesExplored.toString();
 		timeEle.innerText           = tickCount.toString();
 		foodDropEle.innerText       = (foodChance * 100).toString();
-		queenBirthEle.innerText     = (queenChance * 100);
+		queenBirthEle.innerText     = (queenChance * 100).toString();
 		timeUntilBirthEle.innerText = birthTime.toString();
 		drawing                     = false;
 	}
@@ -650,7 +650,7 @@
 	// start with 1 queen
 	new Queen(0, 0);
 
-	setInterval();
+	setInterval(tick, tickTime);
 	setInterval(() => window.requestAnimationFrame(draw), drawTime);
 
 
