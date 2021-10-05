@@ -13,9 +13,10 @@
             margin: 0;
 
 
-        h3 {
+        h2 {
             text-align: center;
-            margin: 0
+			margin:0px;
+    
         }
 
         .label {
@@ -32,7 +33,7 @@
             border-color: black;
             border-style: solid;
             border-width: 1px;
-            transform: translate(-50%, -50%;
+            transform: translate(-50%, -50%);
             display: flex;
             text-align: center;
             justify-content: center;
@@ -253,7 +254,7 @@
 			if (Object.keys(objects[lastCoord]).length < 1) {
 				delete objects[lastCoord];
 			}
-			switch () {
+			switch (left,right,bottom,top) {
 				case ("left"):
 					this.x = this.x - 1;
 					if (this.x < minX) {
