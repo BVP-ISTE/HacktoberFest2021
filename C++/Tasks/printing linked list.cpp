@@ -10,7 +10,7 @@ class Node{
 public:
     int data;
     Node*next;
-    
+
     Node(int data){
         this->data=data;
         next=NULL;
@@ -21,8 +21,9 @@ void print(Node*head){
     Node*temp=head;
     while(temp!=NULL){
         //complete the code in the while loop
-        
-        
+        cout<<temp->data<<endl;
+        temp=temp->next;
+
     }
 }
 
@@ -32,7 +33,7 @@ int main(){
     Node*head=&n1;
     Node n2(2);
     n1.next=&n2;
-    
+
     //dynamically
     Node*n3=new Node(3);
     n2.next=n3;
@@ -40,4 +41,3 @@ int main(){
     n3->next=n4;
     print(head);
 }
-
