@@ -8,8 +8,14 @@ int main()
 	float x, a[10], y1;
 	int deg, i;
 
-	printf("Enter the degree of polynomial equation: ");
+	printf("Enter the degree of polynomial equation (less than 10): ");
 	scanf("%d", &deg);
+
+	if(deg >= 10)
+	{
+		printf("Error ! You must specify a degree under 10.");
+		return 1;
+	}
 
 	printf("Enter the value of x for which the equation is to be evaluated: ");
 	scanf("%f", &x);
