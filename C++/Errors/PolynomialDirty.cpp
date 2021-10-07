@@ -6,7 +6,7 @@ float poly(float a[], int, float);
 int main()
 {
 	float x, a[10], y1;
-	int deg, i;
+	int deg;
 
 	printf("Enter the degree of polynomial equation (less than 10): ");
 	scanf("%d", &deg);
@@ -20,7 +20,7 @@ int main()
 	printf("Enter the value of x for which the equation is to be evaluated: ");
 	scanf("%f", &x);
 
-	for(i=0; i<=deg; i++)
+	for(int i=0; i<=deg; i++)
 	{
 		printf("Enter the coefficient of x to the power %d: ",i);
 		scanf("%f",&a[i]);
