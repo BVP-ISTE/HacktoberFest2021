@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <cmath>
 
 float poly(float a[], int, float);
 
@@ -36,14 +37,12 @@ int main()
 /* function for finding the value of polynomial at some value of x */
 float poly(float a[], int deg, float x)
 {
-	float p;
-	int i;
+	float p = 0.f;
 	
-	p = a[deg];
-	
-	for(i=deg;i>=1;i--)
+	// Polynomial function: a_{n}x^{n}+a_{n-1}x^{n-1}+ ... +a_{2}x^{2}+a_{1}x+a_{0}
+	for(int i=deg; i>=0; i--)
 	{
-		p = (a[i-1] + x*p);
+		p += a[i] * std::pow(x, i);
 	}
 	
 	return p;
