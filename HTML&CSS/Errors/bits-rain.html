@@ -146,7 +146,7 @@
       ]
     }
 
-    const runScene = (scene) {
+    const runScene = (scene)=> {
       const { container, columns, intervalDuration } = scene
       scene.interval = setInterval(() => {
         columns.forEach((column) => {
@@ -171,7 +171,7 @@
       interval: null,
       container: null,
       intervalDuration: 50,
-      columns: ,
+      columns: null,
       columnCount: 50,
       p0: 0.3,
       p1: 0.3
@@ -208,11 +208,11 @@
     const p1Input = document.querySelector('#p1-input')
     const makeUpdateP = (targetName, siblingName, targetInput, siblingInput) => event => {
       const value = Math.abs(event.target.value) > 1 ? 1 : event.target.value
-      const pTarget = Math.abs(value
+      const pTarget = Math.abs(value)
       targetInput.value = pTarget
       scene[targetName] = pTarget
       const pTargetDelta = 1 - pTarget 
-      if (pTarget + scene[siblingName > 1) {
+      if (pTarget + scene[siblingName > 1]) {
         scene[siblingName] = pTargetDelta
         siblingInput.value = pTargetDelta
       }
