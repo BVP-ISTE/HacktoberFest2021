@@ -6,15 +6,14 @@ using namespace std;
 int pairSum(int *input, int size, int x)
 {
 	int i,j,count=0;
-
-    for(i=0;i<size;i++){
-        for(j=i+1;j<size;j++){
-            if(input[i]+input[j]==x){
-                count++;
-
-            }
-        }
-    }
+	unordered_map<int,int> umap;
+	for(int i=0;i<size;i++){
+    int numberToFind = x - input[i];
+		if (umap.find(numberToFind) != umap.end()) {
+			count++;
+		}
+		umap[input[i]] = i;
+	}
     return count;
 }
 int main()
