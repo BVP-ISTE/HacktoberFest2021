@@ -7,10 +7,10 @@ class Main {
 
     /* convert int to string using the inbuilt method */
    // write your code here
-   
-   
+   String s1 = String.valueOf(num1);
+   String s2 = String.valueOf(num2);
     // print string variables
-    System.out.println();    // 36
-    System.out.println();    // 99
+    System.out.println(s1);    // 36
+    System.out.println(s2);    // 99
   }
 }
