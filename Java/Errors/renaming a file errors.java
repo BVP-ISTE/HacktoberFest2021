@@ -1,3 +1,4 @@
+import java.io.File;
 class Main {
   public static void main(String[] args) {
 
@@ -18,9 +19,9 @@ class Main {
     File newFile = new File("oldName");
 
     // change the name of file
-    boolean value = file.setNameTo(oldFile);
+    boolean value = file.renameTo(newFile);
 
-    if(value) {
+    if(value == true) {
       System.out.println("The name of the file is changed.");
     }
     else {
