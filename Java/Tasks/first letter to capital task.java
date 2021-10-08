@@ -17,7 +17,8 @@ class Main {
         if(foundSpace) {
             
             // complete this if loop for the code // 
-
+            charArray[i] = Character.toUpperCase(charArray[i]);
+            foundSpace = false;
         }
       }
 
