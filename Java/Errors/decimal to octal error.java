@@ -10,10 +10,10 @@ public class Main {
     {
         int octalNumber = 0, i = 1;
 
-        while (decimal != 0)
+        while (decimal > 0)
         {
-            octalNumber += (decimal % 2) * i;
-            decimal /= 2;
+            octalNumber += (decimal % 8) * i;
+            decimal /= 8;
             i *= 10;
         }
 
