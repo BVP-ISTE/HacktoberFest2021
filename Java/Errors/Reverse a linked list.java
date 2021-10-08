@@ -27,8 +27,8 @@ class LinkedList {
             current = next; 
         } 
         //find the error
-        node = current; 
-        return node; 
+        node = prev; // this was the error line, previously (current was assigned to node) whose value after while loop was null. 
+        return node; // but prev holds the reverse node so prev should be returned.
     } 
   
     // prints content of double linked list 
