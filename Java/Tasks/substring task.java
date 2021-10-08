@@ -11,7 +11,26 @@ class Main {
     
     //write your code here..
     
-    
+     int f1=0;
+    int f2=0;
+		String[] arrOfStr = txt.split(" ");
+		int len=arrOfStr.length;
+		for(int i=0;i<len;i++){
+		    if(arrOfStr[i].equals(str1)){
+		        f1=1;
+		        System.out.println(str1+" is present. ");
+		    }
+		    if(arrOfStr[i].equals(str2)){
+		        f2=1;
+		        System.out.println(str2+" is present. ");
+		    }
+		}
+		if(f1!=1){
+		    System.out.println(str1+" is not present. ");
+		}
+		if(f2!=1){
+		    System.out.println(str2+" is not present. ");
+		}
     
   }
 }
