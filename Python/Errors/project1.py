@@ -1,11 +1,11 @@
 
 
 #An array element A[i] is called Leader, if all the elements following it (i.e. present at its right) are less than or equal to A[i].
-#find the error in the function
+
 def printLeaders(arr,n): 
     for i in range(0,n):
         l=True
-        for j in range(i+1,n):
+        for j in range(i,n):
             if arr[j]>arr[i]:
                 l=False
                 break
