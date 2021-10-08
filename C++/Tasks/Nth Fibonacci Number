@@ -1,17 +1,32 @@
 //Fibonacci Series using Recursion
+
+//Update: writing a space optimised approach
 #include<bits/stdc++.h>
 using namespace std;
  
 int fib(int n)
 {
-    if (n <= 1)
-        return n;
-    return fib(n-1) + fib(n-2);
+    int first=0,second=1,third;
+    
+    if(n==0)
+    {
+      return 0;
+    }
+    for(int i=2;i<=n;i++)
+    {
+       third=first+second;
+       first=second;
+       second=third;
+    }
+    return second;
+    
 }
  
 int main ()
 {
-    int n = 9;
+    int n;
+    cout<<"Enter a number of your choice: ";
+    cin>>n;
     cout << fib(n);
     getchar();
     return 0;
