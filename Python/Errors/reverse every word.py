@@ -1,7 +1,7 @@
 #reverse each word
 #find the error and correct it
 st=input()
-l={}
+l=[]
 p=""
 for i in range(len(st)):
     if st[i]==' ':
