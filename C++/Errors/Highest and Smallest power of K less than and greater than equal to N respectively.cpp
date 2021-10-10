@@ -21,7 +21,7 @@ void printResult(int n, int k)
 {
 //find the error in the function
     cout << prevPowerofK(n, k)
-         << " " << nextPowerOfK(n)
+         << " " << nextPowerOfK(n,k)
          << endl;
 }
  
