@@ -33,12 +33,14 @@ public:
     }
 
 //function for calculating sum of nodes
+int sum=0;
 int sumNodes(TreeNode<int>*root){
     //find and correct the error in implementation of sum of nodes
-    int sum=1;
+    
     for(int i=0;i<root->children.size();i++){
-        sum+=sumNodes(root->children[i]);
+        sumNodes(root->children[i]);
     }
+    sum += root->data;
     return sum;
 }
 
