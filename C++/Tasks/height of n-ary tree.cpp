@@ -46,7 +46,9 @@ int height(TreeNode<int>*root){
         int tempHeight=height(root->children[i]);
       // a if statemnet is missing in the function
       //complete the function
-        
+        if(tempHeight > maxHeight){
+            maxHeight = tempHeight;
+        }
         
     }
     return maxHeight+1;
