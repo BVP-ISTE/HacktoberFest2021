@@ -14,11 +14,16 @@ result = [  [0,0,0,0],
                     [0,0,0,0] ]
 
 print (len(Y[0]))  # 4
-print len(X)  # 3
-print len(Y) # 3
+print (len(X))  # 3
+print (len(Y)) # 3
 # iterate through rows of X
 for i in range(len(X)):
-   # iterate through columns of Y
+    # iterate through columns of Y
+    for j in range(len(Y[0])):
+        _sum=0
+        for k in range(len(X[0])):
+            _sum += X[i][k] * Y[k][j]
+        result[i][j] = _sum
    
 
 for r in result:
