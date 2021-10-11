@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>bits rain</title>
   <style>
 
@@ -19,8 +19,8 @@
       display: flex;
       border: 1px solid black;
       overflow: hidden;
-      color: FF0000;
-      background-color: 000000;
+      color: #FF0000;
+      background-color: #000000;
     }
 
     #toolbox {
@@ -77,52 +77,52 @@
   <div id=toolbox>
     <div class="tool">
       <span>bit color</span>
-      <input id="text-color-input" type="color" value="#FF0000" />
+      <input id="text-color-input" type="color" value="#FF0000">
     </div>
     <div class="tool">
       <span>background color</span>
-      <input id="background-color-input" type="color" value="000000" />
+      <input id="background-color-input" type="color" value="000000">
     </div>
     <div class="tool">
       <span>update interval (ms)</span>
-      <input id="speed-input" type="number" min="0" max="1000" value="50" size="1" />
+      <input id="speed-input" type="number" min="0" max="1000" value="50" size="1">
     </div>
     <div class="tool">
       <span>column count</span>
-      <input id="column-count-input" type="number" min="0" max="100" value="50" size="4" />
+      <input id="column-count-input" type="number" min="0" max="100" value="50" size="4">
     </div>
     <div class="tool">
       <span>p0
-      <input id="p0-input" type="range" min="0" max="1" step="0.05" value="0.3" 
+      <input id="p0-input" type="range" min="0" max="1" step="0.05" value="0.3"> 
     </div>
     <div class="tool">
       <span>p1</span>
-      <input id=p1-input type="range" min="0" max="1" step="0.05" value="0.3" 
+      <input id=p1-input type="range" min="0" max="1" step="0.05" value="0.3" >
     </div>
   </div>
   <script>
     const isElementOutside = (parent, child) => {
       const parentRect = parent.getBoundingClientRect();
       const childRect = child.getBoundingClientRect();
-      return parentRect.top >= childRect.bottom || parentRect.bottom <= childRect.top;
+      return parentRect.top; => childRect.bottom || parentRect.bottom <= childRect.top;
     }
 
     const getBit = (p0, p1) => {
-      const seed = Math.random()
+      const seed = Math.random();
       if (seed <= p0) return '0'
       if (seed <= p1 + p0) return '1'
       return ' '
     }
 
     insertColumn = container => {
-      const column = document.createElement('div')
-      column.classList.add('column')
-      container.appendChild(column)
-      return column
+      const column = document.createElement('div');
+      column.classList.add('column');
+      container.appendChild(column);
+      return column;
     }
 
     const removeColumn = (container, column) => {
-      container.removeChild(column)
+      container.removeChild(column);
     }
 
     const disposeColumns = (container, count) =>
@@ -130,8 +130,8 @@
 
     const patchColumnCount = (columns, container, nextCount) => {
       const lastCount = columns.length
-      if (lastCount === nextCount) return columns
-      const countDelta = nextCount - lastCount
+      if (lastCount === nextCount) return columns;
+      const countDelta = nextCount - lastCount;
       if (countDelta < 0) {
         return columns.filter((column, index) => {
           if (index < lastCount + countDelta) return true
