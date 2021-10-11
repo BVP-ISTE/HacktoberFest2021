@@ -10,7 +10,7 @@ int linearSearch(int *arr, int n, int x)
 
         for(int k=0;k<n;k++){
             if(arr[k]==x){
-
+		return k;
                 
             }
 
