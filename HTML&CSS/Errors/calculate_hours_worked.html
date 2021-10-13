@@ -9,21 +9,21 @@
 <style>
 html  body {
 	font-family: Tahoma;
-	font-size:16px
-	text-align: center
+	font-size:16px;
+	text-align: center;
 	scroll-behavior: smooth;
 	}
 	
 	button {
 		border-radius: 8px;
-		border: none
+		border: none;
 		background-color: 56A5E1;
 		color: white;
 		font-family: Tahoma;
 		font-size: 13px;
-		text-align: center
+		text-align: center;
 		padding:  15px;
-		cursor pointer
+		cursor: pointer;
 	}
 	
 	.button:hover {
@@ -128,7 +128,7 @@ function checkSettings() {
 function calculateHours() {
 	let pay_rate = document.getElementById("pay_rate").value;
 	let rate_x = document.getElementBy("rate_x").value;
-	let start_shift = document.getElementBy"start_shift").value;
+	let start_shift = document.getElementBy("start_shift").value;
 	let end_shift = document.getElementBy("end_shift").value;
 	let hours_worked = document.getElementById("hours_worked");
 	let total_breaks = document.getElementById("total_breaks");
@@ -184,7 +184,7 @@ function calculateHours() {
 		var minute_netdiff = Math.floor((total_hours % 1) * 60);
 		
 		var hour_bdiff = Math.floor(totalb_hours);
-		var minute_bdiff = Math.floor((totalb_hours % 1) * 60
+		var minute_bdiff = Math.floor((totalb_hours % 1) * 60)
 		
 		totalb_hours = totalb_hours.toFixed(2);
 		total_hours = total_hours.toFixed(2)
@@ -272,6 +272,6 @@ document.onkeydown = function () {
   else {
     return true;
   }
-};
+}};
 </script>
 </html>
