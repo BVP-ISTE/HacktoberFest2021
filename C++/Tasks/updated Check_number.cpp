@@ -5,41 +5,50 @@ using namespace std;
 //Return true or false.  Do this recursively.
 
 bool checkNumber(int input[], int size, int x) {
-  /* Don't write main().
-     Don't read input, it is passed as function argument.
-     Return output and don't print it.
-     Taking input and printing output is handled automatically.
-  */
-  int l=0,r=size-1;
-  while(l<=r){
-      int mid=l+(r-l)/2;
-      if(input[mid]==x)
-        return true;
-      else if(input[mid]<x)
-        l=mid+1;
+  
+  bool num=0;
+  
+  
+  
+  if(size==1)
+  {
+      if(input[0]==x)
+      {
+          return true;
+      }
       else
-        r=mid-1;
+      {
+          return false;
+      }
   }
-  return false;
+  else if(input[0]==x)
+  {
+      return false;
+  }
+  else
+  {
+      num=checkNumber(input+1,size-1,x);
+      return num;
+      
+  }
+ 
+
 
 
 }
 
-int main(){
-    int n;
-    cin >> n;
-    int *input = new int[n];
-    for(int i = 0; i < n; i++) {
-        cin >> input[i];
-    }
-    int x;
-    cin >> x;
-    if(checkNumber(input, n, x)) {
-        cout << "true" << endl;
-    }
-    else {
-        cout << "false" << endl;
-    }
-}
+//int main()
+//{
+  //  int n,x,i;
+ //cin>>n>>x;
+ //int a[n];
+ //for(i=0;i<n;i++)
+   //  cin>>a[i];
+ //bool out;
+ //out=checkNumber(a,n,x);
+ //cout<<out;
 
+ //return 0;
+    
+//}
 
