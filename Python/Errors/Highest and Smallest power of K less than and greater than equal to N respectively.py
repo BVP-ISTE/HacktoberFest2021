@@ -14,7 +14,7 @@ def nextPowerOfK(n, k):
     return prevPowerofK(n, k) * k
  
 # Function to print the result
-def printResult(n):
+def printResult(n, k):
 #find the error
  
     print(prevPowerofK(n, k), nextPowerOfK(n, k))
