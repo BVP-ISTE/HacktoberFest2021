@@ -1,14 +1,23 @@
-# Pairs with difference K
-
-# You are given with an array of integers and an integer K. Write a
-# program to find and print all pairs which have difference K.
-# Take difference as absolute.
-
-def printPairDiffK(li, k):
-  # implement the function
 
 
-n = int(input())
-l = list(int(i) for i in input().strip().split(' '))
+def countPairsWithDiffK(arr, n, k):
+	count = 0
+	
+	# Pick all elements one by one
+	for i in range(0, n):
+		
+		# See if there is a pair of this picked element
+		for j in range(i+1, n) :
+			
+			if arr[i] - arr[j] == k or arr[j] - arr[i] == k:
+				count += 1
+				
+	return count
+
+
+arr = [int(i) for i in input().split()]
+
+n = len(arr)
 k = int(input())
-printPairDiffK(l, k)
+print (countPairsWithDiffK(arr, n, k))
+
