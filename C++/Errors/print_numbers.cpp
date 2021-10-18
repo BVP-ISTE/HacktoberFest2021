@@ -1,10 +1,16 @@
 #include<iostream>
 using namespace std;
-
+/*
 //Given is the code to print numbers from 1 to n in increasing order recursively. 
 //But it contains few bugs that you need to rectify such that all the test cases pass.
-
+*/
 void print(int n,int i){
+    if(n<=0) 
+    {
+        cout<<"Invalid input"<<endl;
+        cout<<"Please enter a natural number"<<endl;
+           return;     //if the value of n is 0 or negative then it will return and the out
+    }
     
     if(n == 1){
         cout << n+i-1 << " ";
@@ -16,6 +22,7 @@ void print(int n,int i){
 
 //No need to change the main function.
 int main(){
+
     int n,i=1;          //Taken i=1 to maintain a counter starting from 1 up
     cin >> n;
   
