@@ -1,4 +1,5 @@
 #include <iostream>
+#include <map>
 using namespace std;
 
 //You have been given an integer array/list(ARR) of size N which contains numbers from 0 to (N - 2).
@@ -6,16 +7,27 @@ using namespace std;
 //values ranging from 0 to 3 and among these, there is a single integer value that is present twice.
 //You need to find and return that duplicate number present in the array.
 
-int duplicateNumber(int *arr, int size) {
+int duplicateNumber(int arr[], int size) {
+    
+    map<int,int>m;
+    int flag;
   for (int i = 0; i < size - 1; i++)
   {
-    for (int j = i + 1; j < size; j++)
-    {
-      if (arr[i] == arr[j]) return arr[i];
-    }
+     flag=0;
+    
+    m[arr[i]]++;
+    
   }
+  for(auto i:m)
+    {
+        if(i.second>1)
+        {
+            flag=i.first;
+        }
+        
+    }
 
-  return 0;
+  return flag;
 
 }
 
@@ -39,7 +51,8 @@ int main()
       cin >> input[i];
     }
 
-    cout << duplicateNumber(input, size) << endl;
+    int res=duplicateNumber(input, size);
+    cout<<res<<endl;
   }
 
   return 0;
