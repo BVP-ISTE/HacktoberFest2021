@@ -1,12 +1,16 @@
 # Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
 
-def string_test(s):
-    d={"UPPER_CASE":0, "LOWER_CASE":0}
-    for c in s:
-        
-           pass
-    print ("Original String : ", s)
-    print ("No. of Upper case characters : ", d["UPPER_CASE"])
-    print ("No. of Lower case Characters : ", d["LOWER_CASE"])
-
-string_test('The quick Brow Fox')
+def count_caps():
+    s = input("Please enter the string...")
+    upper = 0
+    lower = 0
+    length = len(s)
+    i = 0
+    while i < length:
+        if s[i].isupper():
+            upper += 1
+        if s[i].islower():
+            lower += 1
+        i += 1
+    print("String has " + str(upper) + " uppercase and " + str(lower) + " lowercase characters.")
+count_caps()
