@@ -7,15 +7,12 @@ using namespace std;
 
 int linearSearch(int *arr, int n, int x)
 {
-
-        for(int k=0;k<n;k++){
-            if(arr[k]==x){
-
-                
-            }
-
-        }
-        return -1;
+	for(int k=0;k<n;k++){
+		if(arr[k]==x){
+			return 1;			
+		}
+	}
+	return -1;
 }
 
 int main()
