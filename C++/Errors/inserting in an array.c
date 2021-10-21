@@ -20,21 +20,19 @@ struct Array
  {
  int i;
 
- if(index>=0 && index <=arr->length)
+ if(index>=0 && index <=arr.length)
  {
- for(i=arr->length;i>index;i--)
- arr->A[i]=arr->A[i-1];
- arr->A[index]=x;
- arr->length--;
+ for(i=arr.length;i>index;i--)
+ arr.A[i]=arr.A[i-1];
+ arr.A[index]=x;
+ arr.length--;
  }
  }
- 
-//-------------
-int main()
-{
-struct Array arr1={{2,3,4,5,6},10,5};
 
-Insert(&arr1,4,172);
-Display(arr1);
- return 0;
+//-------------
+int main() {
+    struct Array arr1={{2,3,4,5,6},10,5};
+    Insert(arr1,4,172);
+    Display(arr1);
+return 0;
 }
