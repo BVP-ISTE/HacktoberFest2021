@@ -2,34 +2,20 @@ class Main {
   public static void main(String[] args) {
 
     // create a string
-    String message = "everyone loves java";
+    String name = "programiz";
 
-    // stores each characters to a char array
-    char[] charArray = message.toCharArray();
-    boolean foundSpace = true;
+    // create two substrings from name
+    // first substring contains first letter of name
+    // second substring contains remaining letters
+    String firstLetter = name.substring(0, 1);
+    String remainingLetters = name.substring(1, name.length());
 
-    for(int i = 0; i < charArray.length; i++) {
+    // change the first letter to uppercase
+    firstLetter = firstLetter.toUpperCase();
 
-      // if the array element is a letter
-      if(Character.isLetter(charArray[i])) {
+    // join the two substrings
+    name = firstLetter + remainingLetters;
+    System.out.println("Name: " + name);
 
-        // check space is present before the letter
-        if(foundSpace) {
-            
-            // complete this if loop for the code // 
-            charArray[i] = Character.toUpperCase(charArray[i]);
-            foundSpace = false;
-        }
-      }
-
-      else {
-        // if the new character is not character
-        foundSpace = true;
-      }
-    }
-
-    // convert the char array to the string
-    message = String.valueOf(charArray);
-    System.out.println("Message: " + message);
   }
 }
