@@ -1,16 +1,8 @@
-class Main {
-  public static void main(String[] args) {
-
-    // create int variable
-    int num1 = 36;
-    int num2 = 99;
-
-    /* convert int to string using the inbuilt method */
-   // write your code here
-   String s1 = String.valueOf(num1);
-   String s2 = String.valueOf(num2);
-    // print string variables
-    System.out.println(s1);    // 36
-    System.out.println(s2);    // 99
-  }
+class Main
+{
+public static void main(String args[])
+{
+	String str3 = String.valueOf(1234);
+	System.out.println("String str3 = " + str3);
+}
 }
