@@ -1,32 +1,32 @@
-def anagram(s, ):
-    string = len(s)
-    substring = len(t)
-    # edge conditions
-    if substring == 0
-        return True
-    if substring > string:
-        return False
-    # store substring in dictionary diction
-    substringdiction dict()
-    for c in t
-        substringdiction[c] = substringdiction.get(c, 0) + 1
+# ANAGRAM FINDER
 
-    # loop s
-    for i in range string:
-        stringdiction = {}
-        for j in range(i, i + substring):
-            # this substring !=substringdiction case, break
-            if s[j] not in substringdiction:
-                break
-            # store each substring in dictionary stringdiction
-            else:
-                stringdiction[s[j]] = stringdiction.get(s[j], 0) + 1
-        # stringdiction==substringdiction means one anagram of t is the substring of s, return True
-        if stringdiction == substringdiction
-            return True
-    # not found stringdiction=substringdiction in the loop
-    return False
+def anagram(arr):
+    ''' This function takes in the original list of strings, converts each of
+the strings to lists of characters and sorts them in alphabetic order. By
+sorting them its clear which of the words are anagrams'''
+    sorted_list = []
+    for i in arr:
+        #the sorted function returns a sorted list
+        i = sorted(i)
+        sorted_list.append(i)
+    return sorted_list
 
-print anagram("udacity","ty")
-print anagram("udacity"," ")
-print anagram("udacity","mnbgfdfdsfsdfgsgdfg12121")
+
+def anagram_finder(arr):
+    super_list = []
+    sorted_list = anagram(arr)
+    for i in range(len(sorted_list)):
+        #words that have no anagrams are placed in their separate sublists
+        #that is words that appear once when sorted
+        if sorted_list.count(sorted_list[i]) == 1:
+            super_list.append([arr[i]])
+        for j in range(len(sorted_list)):
+            if sorted_list[i] == sorted_list[j] and i != j:
+                #words that appear twice are anagrams and are placed in their sublists
+                if [arr[i], arr[j]] not in super_list and [arr[j], arr[i]] not in super_list:
+                    super_list.append([arr[i], arr[j]])
+
+    return super_list
+
+
+print(anagram_finder(['cat', 'race', 'tac', 'care', 'bus', 'dog', 'road', 'fried', 'fired']))

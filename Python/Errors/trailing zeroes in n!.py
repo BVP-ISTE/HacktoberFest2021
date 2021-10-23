@@ -3,8 +3,8 @@
 
 num=int(input())
 ans=0
-while num!=0:
-    rem=num/5
-    num=num/5
-    ans=ans+rem
+while num>=0:
+    num //=5
+    ans +=n
+    
 print(ans)

@@ -7,10 +7,9 @@
 # Print output as specified in the question.
 
 def dsum(n):
-    small = dsum(n//10)
-    ans = n % 10+small
-    return ans
-
+    if n == 0:
+        return 0
+    return (n % 10 + sum_of_digit(int(n / 10)))
 
 n = int(input())
 print(dsum(n))
