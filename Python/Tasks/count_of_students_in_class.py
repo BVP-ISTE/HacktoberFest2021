@@ -9,5 +9,5 @@ classes = (
     ('VI', 3),
     ('VII', 1),
 )
-students = Counter()
+students = Counter(class_name for class_name, no_students in classes)
 print(students)
