@@ -4,10 +4,10 @@
 #find the error in the function and correct it
 def printLeaders(arr,n): 
     for i in range(0,n):
-        l=False
+        l=True
         for j in range(i+1,n):
-            if arr[j]>arr[i]:
-                l=True
+            if arr[j]<arr[i]:
+                l=False
                 break
         if l:
             print(arr[i],end=" ")
