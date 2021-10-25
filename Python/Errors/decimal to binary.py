@@ -1,11 +1,14 @@
-#decimal to binary
-#find the error in the code
-num=int(input())
-bnum = 0
-mul = 1
-while num>0:
-    rem = num%2
-    bnum = bnum+(rem*mul)
-    mul = mul*10
-    num = int(num/2)
-print(bnum)
+# decimal to binary
+import math
+  
+num=int(input("Enter a Number : "))
+bnum=""
+rem=""
+while num>=1:
+    rem+=str(num%2)
+    num=math.floor(num/2)
+    
+for i in range(len(rem)-1,-1,-1):
+    bnum = bnum + rem[i]
+     
+print("Binary number for given number is {0}".format(bnum))
