@@ -6,19 +6,33 @@
 #If two or more elements contend for the maximum frequency, return the 
 #element which occurs in the array first.
 
-def maxFreq(l):
-    d = {}
-    for w in l:
-        if w in d:
-            d[w] += 1
-        else: # if the element is not there in the dictionary then adding it to 'd'
-            d[w] = 1
-
-    final = max(d, key= lambda x: d[x]) # enhanced max function
-    return final
-
-
-# Main
-# n = int(input()) # also I don't know why you are taking n as input. 
-l = list(int(i) for i in input().strip().split(' '))
-print(maxFreq(l))
+def mostFrequent(arr, n):
+ 
+    # Sort the array
+    arr.sort()
+    max_count = 1; res = arr[0]; curr_count = 1
+     
+    for i in range(1, n):
+        if (arr[i] == arr[i - 1]):
+            curr_count += 1
+             
+        else :
+            if (curr_count > max_count):
+                max_count = curr_count
+                res = arr[i - 1]
+             
+            curr_count = 1
+     
+    # If last element is most frequent
+    if (curr_count > max_count):
+     
+        max_count = curr_count
+        res = arr[n - 1]
+     
+    return res
+ 
+# Driver Code
+arr = [1, 5, 2, 1, 3, 2, 1]
+n = len(arr)
+print(mostFrequent(arr, n))
+ 
