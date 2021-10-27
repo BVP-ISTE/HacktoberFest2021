@@ -23,7 +23,7 @@ bool checkNumber(int input[], int size, int x) {
   }
   else if(input[0]==x)
   {
-      return false;
+      return true;
   }
   else
   {
@@ -37,18 +37,19 @@ bool checkNumber(int input[], int size, int x) {
 
 }
 
-//int main()
-//{
-  //  int n,x,i;
- //cin>>n>>x;
- //int a[n];
- //for(i=0;i<n;i++)
-   //  cin>>a[i];
- //bool out;
- //out=checkNumber(a,n,x);
- //cout<<out;
+int main()
+{
 
- //return 0;
+  int n,x,i;
+ cin>>n>>x;
+ int a[n];
+ for(i=0;i<n;i++)
+     cin>>a[i];
+ bool out;
+ out=checkNumber(a,n,x);
+if(out) cout<<x<<" is present "<<endl;
+else cout<<x<<" is not present "<<endl;
+
+return 0;
     
-//}
-
+}
