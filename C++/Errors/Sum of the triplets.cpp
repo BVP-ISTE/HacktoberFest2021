@@ -12,7 +12,7 @@ int tripletSum(int *input, int size, int x)
         for(j=i+1;j<size;j++){
             for(k=j+1;k<size;k++){
                 if(input[i]+input[j]+input[k]==x){
-                    
+                    count++;
                 }
             }
         }
