@@ -38,6 +38,19 @@ void Sieve()
 int binarySearch(int left,int right,int n) 
 { 
     //complete the binary search function
+    if (right >= left) {
+        int mid = left + (right - left) / 2;
+ 
+        if (primes[mid] == n)
+            return mid;
+ 
+        if (primes[mid] > n)
+            return binarySearch(left, mid - 1, n);
+ 
+        return binarySearch(mid + 1, right, n);
+    }
+ 
+    return -1;
 } 
   
 // Driver program to run the case 
