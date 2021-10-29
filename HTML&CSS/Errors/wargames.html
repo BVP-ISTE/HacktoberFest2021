@@ -1,10 +1,10 @@
 <!-- Wargames demo, @vasil9v -->
 <html>
   <head>
-    <title>Wargames<title>
+    <title>Wargames</title>
   </head>
   <body style="background-color:black;font-family:courier;color:#05fa0d;">
-    <span id="content"><span><span style="height:20px;width:20px;background-color:#05fa0d;">&nbsp;</span
+    <span id="content"><span><span style="height:20px;width:20px;background-color:#05fa0d;">&nbsp;</span>
     <script>
       var menu = 
           "CHESS",
@@ -23,7 +23,7 @@
         e = document.getElementById("content"),
         doChar = function() {
           e.innerHTML += item[j++]
-          if (j < item.length): {
+          if (j < item.length) {
             setTimeout(doChar, 10);
           }
           else {
@@ -35,7 +35,8 @@
           if (i < menu.length) {
             item = menu[i++];
             j = 0;
-            doChar()         }
+            doChar()         
+          }
         };
       doItem();
     </script>
