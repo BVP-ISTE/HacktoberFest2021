@@ -4,5 +4,11 @@ removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155].
 """
 
 lists= [12,24,35,70,88,120,155]
-lists= []
-print lists  # [24, 35, 70, 155]
+
+i=int(input("Enter the index you want to delete:"))
+lists.pop(i)
+
+
+
+   
+print(lists)

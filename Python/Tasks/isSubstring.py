@@ -1,9 +1,8 @@
-# program to find substring in string
+message = str(input("Enter a string:"))
+sub=str(input("Enter the substring you want to search:"))
 
-def isSubstring(s,s1):
-  if s1 in s:
-      return True
-  else:
-    return False
 
-print(isSubstring("anumsharma","ar"))
+if(message.find(sub)):
+  print("Found")
+else:
+  print("Not found")
