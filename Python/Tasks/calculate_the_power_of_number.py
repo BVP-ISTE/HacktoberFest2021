@@ -2,7 +2,7 @@
 
 # Write a Python program to calculate the value of 'a' to the power 'b'.
 
-def power(a,b):
+"""def power(a,b):
 	if b==0:
 		return 1
 	elif a==0:
@@ -23,5 +23,8 @@ def list_sum(num_List):
     else:
         return num_List[0] + list_sum(num_List[1:])
         
-print(list_sum([2, 4, 5, 6, 7]))
+print(list_sum([2, 4, 5, 6, 7]))"""
 
+a=int(input("Enter a number a:"))
+b=int(input("Enter a number b:"))
+print(a**b)
