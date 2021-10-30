@@ -1,9 +1,6 @@
 # Write a Python program to create an array of 5 integers and display the array items.
 #Access individual element through indexes.
 
-from array import *
-
-print("Access first three items individually")
-print(array_num[0])
-print(array_num[1])
-print(array_num[2])
+array=[1,2,3,4,5]
+for i in range(len(array)):
+    print(array[i])
