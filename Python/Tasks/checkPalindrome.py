@@ -1,15 +1,7 @@
-array = input("Enter the string:")
+s= input("Enter the string:")
+a=s[-1::-1]
+if a==s:
+    print(s+" is palindrome")
+else:
+    print(s+" is not palindrome")
 
-
-isPalindrome = True
-i = 0
-n = len(array)
-
-while i < (n-i-1):
-    if array[i] != array[n-i-1]:
-        isPalindrome = False
-        break
-    i += 1
-
-
-print("Palindrome:", "Yes" if isPalindrome else "No")
