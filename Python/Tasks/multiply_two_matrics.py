@@ -1,30 +1,21 @@
-# Program to multiply two matrices 
+# Program to multiply two matrices     
+import numpy
+row_1,column_1=map(int,input("Enter rows and columns of matrix 1:").split())
+row_2,column_2=map(int,input("Enter rows and columns of matrix 2:").split())
+e=[]
+f=[]
+for i in range(row_1):
+    elements=list(map(int,input("Enter number of elemnts that is equal to column_1:").split()))
+    e.append(elements)
+for i in range(row_2):
+    elements=list(map(int,input("Enter number of elemnts that is equal to column_2:").split()))
+    f.append(elements)
+arr_1=numpy.array(e)
+arr_2=numpy.array(f)
+if column_1==row_2:
+    print(numpy.dot(arr_1,arr_2))
+elif column_2==row_1:
+    print(numpy.dot(arr_2,arr_1))
+else:
+    print("Matrices cant be printed")
 
-# 3x3 matrix
-X = [      [12,7,3],
-               [4 ,5,6],
-               [7 ,8,9]  ]
-# 3x4 matrix
-Y = [ [5,8,1,2],
-          [6,7,3,0],
-          [4,5,9,1] ]
-# result is 3x4
-result = [  [0,0,0,0],
-                    [0,0,0,0],
-                    [0,0,0,0] ]
-
-print (len(Y[0]))  # 4
-print (len(X))  # 3
-print (len(Y)) # 3
-# iterate through rows of X
-for i in range(len(X)):
-    # iterate through columns of Y
-    for j in range(len(Y[0])):
-        _sum=0
-        for k in range(len(X[0])):
-            _sum += X[i][k] * Y[k][j]
-        result[i][j] = _sum
-   
-
-for r in result:
-   print(r)
