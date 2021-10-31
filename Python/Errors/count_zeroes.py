@@ -3,14 +3,25 @@
 # that are present in the given integer using recursion.
 
 
+sum=0
 def count(n):
-    
-    if n == 0:
-        return 0
-    elif n%10 == 0:
-        return 1 + count(n//10)
+    global sum
+    if n==0:
+        pass
     else:
-        return count(n//10)
+        i=n%10
+        
+        if(i==0):
+            sum+=1
+ 
+        n=n//10
+        count(n)
+    return sum
 
+        
+        
+    
 n = int(input())
 print(count(n))
+
+
