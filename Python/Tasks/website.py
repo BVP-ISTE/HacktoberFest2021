@@ -25,7 +25,7 @@ print items
 for p in items:
      print "length is ",len(p)
      if len(p)<6 or len(p)>12:
-               continue
+               conti
      if :
                 print " a-z characters  not in the password"
                 continue
